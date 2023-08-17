@@ -39,7 +39,7 @@ class Advertisement(models.Model):
     def image_img(self):
         if self.image:
             return format_html(
-                '<img scr="{url}" style="max-width:80px; max-height: 80px;"', url=self.image.url
+                '<img src="{url}" style="max-width:80px; max-height: 80px;"', url=self.image.url
             )
 
 
